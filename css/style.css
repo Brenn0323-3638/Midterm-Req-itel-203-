@@ -1,0 +1,298 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --lg-font: 'Concert One', serif;
+    --sm-font: 'Nunito', sans-serif;
+    --brown: #a6674c;
+    --contact: #a6674c; 
+}
+
+body {
+    font-family: var(--sm-font);
+    background-color: #212529;
+    color: white;
+}
+
+/* button */
+.bg-primary {
+    background-color: var(--brown)!important;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: var(--brown);
+    color: #fff;
+    border-color: var(--brown);
+}
+
+.text-primary {
+    color: var(--brown)!important;
+}
+
+/* navbar */
+.navbar-toggler-icon {
+    background-color: white !important;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: var(--brown)!important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+    font-size: 14px;
+}
+
+.navbar-brand span {
+    font-size: 20px;
+    color: white;
+}
+
+/* header */
+#header {
+    background: url(../images/banner1.png) top/cover no-repeat;
+}
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn {
+    border-color: #fff!important;
+}
+
+.carousel-item .btn:hover {
+    border-color: var(--brown)!important;
+}
+
+/* title */
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--brown);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* menu */
+.active-filter-btn {
+    background-color: var(--brown)!important;
+    color: #fff!important;
+    border-color: var(--brown)!important;
+}
+
+.filter-button-group .btn:hover {
+    color: #fff!important;
+}
+
+.menu-img span {
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+#menu {
+    background-color: #212529;
+    color: white;
+}
+
+#menu .btn {
+    color: white;
+}
+
+#menu .menu-list .text-center p,
+#menu .menu-list .text-center span {
+    color: white;
+}
+
+#menu .menu-img span {
+    color: white;
+}
+
+#menu .nav-link,
+#menu .nav-item {
+    color: white;
+}
+
+.menu-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* special section */
+.special-img span {
+    top: 20px;
+    right: 20px;
+}
+
+.special-list .btn {
+    padding: 8px 20px !important;
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.special-img img {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.special-img:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#special {
+    background-color: #212529;
+    color: white;
+}
+
+#special .text-center p,
+#special .text-center span,
+#special .text-center a {
+    color: white;
+}
+
+.special-img img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Button Hover State */
+.special-list .btn:hover {
+    background-color: var(--brown) !important; 
+    color: #fff !important;  
+    border-color: var(--brown) !important; 
+}
+
+
+.special-list .btn:focus,
+.special-list .btn:active {
+    background-color: var(--brown) !important;
+    color: #fff !important;
+    border-color: var(--brown) !important;
+}
+
+/* cats */
+#introCats {
+    background: url(../images/banner1.png) center/cover no-repeat;
+}
+
+#introCats .row {
+    min-height: 60vh;
+}
+
+#introCats span {
+    font-size: 28px;
+}
+
+.introCats-content .btn {
+    border-color: transparent!important;
+}
+
+#introCats h2 {
+    font-family: var(--lg-font);
+    font-size: 60px;
+}
+
+
+.card img {
+    object-fit: cover;
+    border-radius: 15px; 
+    max-width: 100%; 
+    height: 300px;
+}
+
+/* About */
+img.img-fluid {
+    border-radius: 15px;
+}
+
+/* contact */
+#contact p {
+    max-width: 600px;
+}
+
+#contact .btn {
+    background-color: var(--brown);
+    color: #fff;
+    border-color: var(--brown);
+}
+
+#contact .btn:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+#contact .input-group {
+    max-width: 500px;
+}
+
+#contact .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+/* footer */
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+footer a {
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--contact)!important;
+}
+
+/* media queries */
+@media(min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
